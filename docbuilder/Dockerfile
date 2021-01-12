@@ -22,4 +22,4 @@ RUN : \
 COPY entrypoint.sh /opt
 
 # activate it by default
-#ENTRYPOINT ["/opt/entrypoint.sh"]
+ENTRYPOINT ["/opt/entrypoint.sh"]

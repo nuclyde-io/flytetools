@@ -13,6 +13,7 @@ RUN : \
 ENV VENV /venv
 
 RUN python3.8 -m venv ${VENV} \
+    && ${VENV}/bin/pip install wheel \
     && ${VENV}/bin/pip install Sphinx \
     && ${VENV}/bin/pip install sphinx_rtd_theme
 
